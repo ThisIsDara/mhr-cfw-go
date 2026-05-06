@@ -47,15 +47,16 @@ cd mhr-cfw-go
 
 یا آخرین نسخه را از [GitHub Releases](https://github.com/ThisIsDara/mhr-cfw-go/releases) دانلود کنید
 
-### 2 - اجرای build.bat
+### 2 - بیلد روی لینوکس
 
-روی `build.bat` دوبار کلیک کنید یا اجرا کنید:
+اسکریپت را اجرایی کنید و سپس اجرا کنید:
 
-```powershell
-.\build.bat
+```bash
+chmod +x build.sh
+./build.sh
 ```
 
-این کار فایل `mhr-cfw-go.exe` را می‌سازد
+این کار فایل `mhr-cfw-go` را می‌سازد.
 
 ### 3 - تنظیمات
 
@@ -70,10 +71,10 @@ cd mhr-cfw-go
 
 ### 4 - اجرا
 
-روی `mhr-cfw-go.exe` دوبار کلیک کنید یا اجرا کنید:
+اجرا کنید:
 
-```powershell
-.\mhr-cfw-go.exe
+```bash
+./mhr-cfw-go
 ```
 
 برنامه یک منو باز می‌کند. گزینه `1) Start proxy` را انتخاب کنید تا پراکسی شروع شود.
@@ -101,7 +102,7 @@ cd mhr-cfw-go
 * [Go 1.22+](https://go.dev/dl/)
 
 ```bash
-go build -ldflags "-s -w" -o mhr-cfw-go.exe ./cmd/mhr-cfw
+go build -ldflags "-s -w" -o mhr-cfw-go ./cmd/mhr-cfw
 ```
 
 ---

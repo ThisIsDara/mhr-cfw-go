@@ -55,15 +55,16 @@ cd mhr-cfw-go
 
 Or download the latest release from [ 📥 GitHub Releases](https://github.com/ThisIsDara/mhr-cfw-go/releases)
 
-### 2 - Run build.bat
+### 2 - Build on Linux
 
-Double-click `build.bat` or run:
+Make the script executable, then run it:
 
-```powershell
-.\build.bat
+```bash
+chmod +x build.sh
+./build.sh
 ```
 
-This will build the `mhr-cfw-go.exe` file.
+This will build the `mhr-cfw-go` binary.
 
 ### 3 - Configure
 
@@ -78,10 +79,10 @@ Edit `config.json` with your settings or ideally run `Setup Wizard` in the TUI:
 
 ### 4 - Run
 
-Double-click `mhr-cfw-go.exe` or run:
+Run:
 
-```powershell
-.\mhr-cfw-go.exe
+```bash
+./mhr-cfw-go
 ```
 
 The app opens an interactive menu. Select ``1) Start proxy`` to begin.
@@ -108,7 +109,7 @@ Requirements:
 - [Go 1.22+](https://go.dev/dl/)
 
 ```bash
-go build -ldflags "-s -w" -o mhr-cfw-go.exe ./cmd/mhr-cfw
+go build -ldflags "-s -w" -o mhr-cfw-go ./cmd/mhr-cfw
 ```
 
 ---

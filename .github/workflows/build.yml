@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
@@ -19,13 +19,13 @@ jobs:
           go-version: '1.22'
 
       - name: Build
-        run: go build -ldflags "-s -w" -o mhr-cfw-go.exe ./cmd/mhr-cfw
+        run: go build -ldflags "-s -w" -o mhr-cfw-go ./cmd/mhr-cfw
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: mhr-cfw-go
-          path: mhr-cfw-go.exe
+          path: mhr-cfw-go
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -36,7 +36,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: mhr-cfw-go.exe
+          files: mhr-cfw-go
           body: "Built from commit ${{ github.sha }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
