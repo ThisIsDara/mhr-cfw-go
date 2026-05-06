@@ -47,6 +47,11 @@ cd mhr-cfw-go
 
 یا آخرین نسخه را از [GitHub Releases](https://github.com/ThisIsDara/mhr-cfw-go/releases) دانلود کنید
 
+> **💡 نکته:** اگر در نصب وابستگی‌های Go مشکل دارید، از میرور ایرانی رانفلر استفاده کنید:
+> ```bash
+> GOPROXY=https://mirror-go.runflare.com go mod download
+> ```
+
 ### 2 - اجرای build.bat
 
 روی `build.bat` دوبار کلیک کنید یا اجرا کنید:

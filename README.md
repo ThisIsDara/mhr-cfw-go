@@ -46,6 +46,11 @@ The program runs on your PC and sends your requests through Google's infrastruct
  ## 📦 Requirements:
  - [Go 1.22+](https://go.dev/dl/)
 
+ **💡 Tip:** If you have trouble downloading Go dependencies, use the Runflare Iranian mirror:
+```bash
+GOPROXY=https://mirror-go.runflare.com go mod download
+```
+
 ### 1 - Clone and Build
 
 ```bash
