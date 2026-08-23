@@ -1,5 +1,6 @@
 # [MHR-CFW](https://github.com/denuitt1/mhr-cfw) Rewritten in Go with YouTube Support Fix and Speed Improvements
 [![GitHub](https://img.shields.io/badge/GitHub-ThisIsDara-blue?logo=github)](https://github.com/ThisIsDara/mhr-cfw-go)
+[![Downloads](https://img.shields.io/github/downloads/ThisIsDara/mhr-cfw-go/total?logo=github&label=total%20downloads)](https://github.com/ThisIsDara/mhr-cfw-go/releases)
 
 **[فارسی](README_FA.md)**
 
